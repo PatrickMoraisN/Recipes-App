@@ -15,17 +15,19 @@ const Card = ({ thumb, name, index, id }) => {
   return (
     <button
       type="button"
-      className="card-container"
+      className="box"
       data-testid={ `${index}-recipe-card` }
       onClick={ handleClick }
     >
-      <img
-        src={ thumb }
-        alt={ name }
-        className="img-card"
-        data-testid={ `${index}-card-img` }
-      />
-      <h3 data-testid={ `${index}-card-name` }>{name}</h3>
+      <span>
+        <img
+          src={ thumb }
+          alt={ name }
+          className="img-card"
+          data-testid={ `${index}-card-img` }
+        />
+        <h3 data-testid={ `${index}-card-name` }>{name}</h3>
+      </span>
     </button>
   );
 };

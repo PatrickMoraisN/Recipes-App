@@ -31,7 +31,7 @@ function Header({ page, title }) {
     <>
       <input data-testid="search-input" id="searchInput" />
       <br />
-      <label htmlFor="ingredient">
+      <label htmlFor="ingredient" className="text">
         <input
           id="ingredient"
           type="radio"
@@ -41,7 +41,7 @@ function Header({ page, title }) {
         />
         Ingrediente
       </label>
-      <label htmlFor="name">
+      <label htmlFor="name" className="text">
         <input
           type="radio"
           id="name"
@@ -51,7 +51,7 @@ function Header({ page, title }) {
         />
         Nome
       </label>
-      <label htmlFor="first-letter">
+      <label htmlFor="first-letter" className="text">
         <input
           id="first-letter"
           type="radio"
@@ -64,6 +64,7 @@ function Header({ page, title }) {
       <br />
       <button
         data-testid="exec-search-btn"
+        className="entrar-btn search-btn"
         type="button"
         onClick={ handleClick }
       >
@@ -76,21 +77,23 @@ function Header({ page, title }) {
     <section>
       <header>
         <Link to="/perfil">
-          <input
-            type="image"
-            data-testid="profile-top-btn"
-            src={ profileIcon }
-            alt="profile user"
-          />
+          <i class="fas fa-user user"></i>
         </Link>
         <h1 data-testid="page-title">{title}</h1>
-        <input
+        <i 
+          class="fas fa-search lupa"
+          onClick={ () => setShowSearch(!showSearch) }
+          alt="search bar"
+        >
+
+        </i>
+        {/* <input
           type="image"
           data-testid="search-top-btn"
           onClick={ () => setShowSearch(!showSearch) }
           src={ searchIcon }
           alt="search bar"
-        />
+        /> */}
       </header>
       {showSearch && searchInputs()}
     </section>

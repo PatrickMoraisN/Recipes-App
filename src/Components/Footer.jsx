@@ -15,31 +15,30 @@ const Footer = () => {
   return (
     <footer data-testid="footer">
       <Link to="/bebidas">
-        <input
-          type="image"
-          data-testid="drinks-bottom-btn"
-          onClick={ handleClick }
-          src={ drinkIcon }
-          alt="Drink icon"
-        />
+      <i 
+        class="fas fa-cocktail bebida"
+        data-testid="drinks-bottom-btn"
+        onClick={ handleClick }
+        alt="Drink icon"
+      >
+      </i>
       </Link>
       <Link to="/explorar">
-        <input
+        <i class="fas fa-globe-americas explore"
           type="image"
           data-testid="explore-bottom-btn"
           onClick={ handleClick }
-          src={ exploreIcon }
           alt="Explore icon"
-        />
+        >
+      </i>
       </Link>
       <Link to="/comidas">
-        <input
-          type="image"
-          data-testid="food-bottom-btn"
-          onClick={ handleClick }
-          src={ mealIcon }
-          alt="Food icon"
-        />
+      <i class="fas fa-hamburger hamburguer"
+        data-testid="food-bottom-btn"
+        onClick={ handleClick }
+        alt="Food icon"
+      >
+      </i>
       </Link>
     </footer>);
 };

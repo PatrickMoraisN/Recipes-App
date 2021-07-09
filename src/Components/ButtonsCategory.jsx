@@ -41,11 +41,12 @@ const ButtonsCategory = ({ page, identifier }) => {
   };
 
   return (
-    <section>
+    <section className="btns-category">
       <button
         type="button"
         onClick={ handleClickAll }
         data-testid="All-category-filter"
+        className="btn-category"
       >
         All
       </button>
@@ -59,6 +60,7 @@ const ButtonsCategory = ({ page, identifier }) => {
                 data-testid={ `${category.strCategory}-category-filter` }
                 onClick={ () => handleClick(category.strCategory) }
                 key={ category.strCategory }
+                className="btn-category"
               >
                 {category.strCategory}
               </button>
