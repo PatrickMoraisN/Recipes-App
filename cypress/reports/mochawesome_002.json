@@ -1,0 +1,607 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 20,
+    "passes": 0,
+    "pending": 0,
+    "failures": 20,
+    "start": "2021-06-29T20:40:24.622Z",
+    "end": "2021-06-29T20:40:34.683Z",
+    "duration": 10061,
+    "testsRegistered": 20,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bbb3afc1-3845-4ce3-969e-168020fb11f0",
+      "title": "",
+      "fullFile": "cypress/integration/header_spec.js",
+      "file": "cypress/integration/header_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "370d9961-ded6-4d6a-ad90-62d4ef0a33f4",
+          "title": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "fullTitle": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "timedOut": null,
+              "duration": 1478,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"profile-top-btn\"]');\ncy.get('[data-testid=\"page-title\"]');\ncy.get('[data-testid=\"search-top-btn\"]');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "665b7b8e-098d-485a-a5ca-7030f345d599",
+              "parentUUID": "370d9961-ded6-4d6a-ad90-62d4ef0a33f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "665b7b8e-098d-485a-a5ca-7030f345d599"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1478,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+          "title": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Não tem header na tela de login",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de login",
+              "timedOut": null,
+              "duration": 331,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\nhasNoHeader();",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "f3184b46-749f-4478-98dd-27cc862e22a2",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de principal de receitas de comidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de principal de receitas de comidas",
+              "timedOut": null,
+              "duration": 310,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\nhasHeader('Comidas');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "c72a9389-21de-4c65-bd84-beed39dbe0d7",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de principal de receitas de bebidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de principal de receitas de bebidas",
+              "timedOut": null,
+              "duration": 307,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/bebidas');\nhasHeader('Bebidas');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "dc7745fc-cc0d-4efb-8188-514dcadb8d30",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de detalhes de uma receita de comida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de detalhes de uma receita de comida",
+              "timedOut": null,
+              "duration": 316,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas/52771');\nhasNoHeader();",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "09ac931d-3cde-4cb3-9f78-2b8b4727ad12",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de detalhes de uma receita de bebida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de detalhes de uma receita de bebida",
+              "timedOut": null,
+              "duration": 303,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/bebidas/178319');\nhasNoHeader();",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "ec34855f-e6fe-4cc3-8a04-b5ed24d186ee",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de receita em processo de comida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de receita em processo de comida",
+              "timedOut": null,
+              "duration": 313,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas/52771/in-progress');\nhasNoHeader();",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "1a584585-f6c0-4686-92c3-19118e656a2c",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de receita em processo de bebida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de receita em processo de bebida",
+              "timedOut": null,
+              "duration": 393,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/bebidas/178319/in-progress');\nhasNoHeader();",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "0c24c7f5-03b0-40a8-888a-5d27779b9f57",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar",
+              "timedOut": null,
+              "duration": 342,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar');\nhasHeader('Explorar', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "5013206a-c10c-4fa5-8dd6-0bae31bcde9f",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas",
+              "timedOut": null,
+              "duration": 419,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/comidas');\nhasHeader('Explorar Comidas', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "85c325ca-8267-472e-abb3-0699c1ab978d",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar bebidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar bebidas",
+              "timedOut": null,
+              "duration": 332,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/bebidas');\nhasHeader('Explorar Bebidas', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "e8a8f1ff-d904-44f8-9991-6384e6d1c747",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas por ingrediente",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas por ingrediente",
+              "timedOut": null,
+              "duration": 273,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/comidas/ingredientes');\nhasHeader('Explorar Ingredientes', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "ad6c1126-9aca-437c-8ae6-d6db4ba2b313",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar bebidas por ingrediente",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar bebidas por ingrediente",
+              "timedOut": null,
+              "duration": 295,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/bebidas/ingredientes');\nhasHeader('Explorar Ingredientes', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "108a7446-15b7-4a82-a6c0-5507ba473766",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas por local de origem",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas por local de origem",
+              "timedOut": null,
+              "duration": 371,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explorar/comidas/area');\nhasHeader('Explorar Origem');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "b3df26c1-9c9c-4529-83a8-e8c50dd6f062",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de perfil",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de perfil",
+              "timedOut": null,
+              "duration": 298,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/perfil');\nhasHeader('Perfil', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "e1f54d32-629f-4ab1-ab95-ecc22fb72045",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de receitas feitas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de receitas feitas",
+              "timedOut": null,
+              "duration": 285,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/receitas-feitas');\nhasHeader('Receitas Feitas', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "da8ad26b-6c37-4a42-a5b8-d0c28f11a6b5",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de receitas favoritas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de receitas favoritas",
+              "timedOut": null,
+              "duration": 303,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/receitas-favoritas');\nhasHeader('Receitas Favoritas', false);",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "61a7ef70-048d-4952-8a0f-fb4bbced79a6",
+              "parentUUID": "a36b2789-ff1e-4b3c-8505-aa674540853c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f3184b46-749f-4478-98dd-27cc862e22a2",
+            "c72a9389-21de-4c65-bd84-beed39dbe0d7",
+            "dc7745fc-cc0d-4efb-8188-514dcadb8d30",
+            "09ac931d-3cde-4cb3-9f78-2b8b4727ad12",
+            "ec34855f-e6fe-4cc3-8a04-b5ed24d186ee",
+            "1a584585-f6c0-4686-92c3-19118e656a2c",
+            "0c24c7f5-03b0-40a8-888a-5d27779b9f57",
+            "5013206a-c10c-4fa5-8dd6-0bae31bcde9f",
+            "85c325ca-8267-472e-abb3-0699c1ab978d",
+            "e8a8f1ff-d904-44f8-9991-6384e6d1c747",
+            "ad6c1126-9aca-437c-8ae6-d6db4ba2b313",
+            "108a7446-15b7-4a82-a6c0-5507ba473766",
+            "b3df26c1-9c9c-4529-83a8-e8c50dd6f062",
+            "e1f54d32-629f-4ab1-ab95-ecc22fb72045",
+            "da8ad26b-6c37-4a42-a5b8-d0c28f11a6b5",
+            "61a7ef70-048d-4952-8a0f-fb4bbced79a6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5191,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "6166a310-d148-4c9c-83fc-1df45c720a14",
+          "title": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A mudança de tela ocorre corretamente",
+              "fullTitle": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil A mudança de tela ocorre corretamente",
+              "timedOut": null,
+              "duration": 303,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"page-title\"]').contains('Comidas');\ncy.get('[data-testid=\"profile-top-btn\"]').click();\ncy.get('[data-testid=\"page-title\"]').contains('Perfil');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "c84d430f-509c-476d-9335-d968b1f4ef33",
+              "parentUUID": "6166a310-d148-4c9c-83fc-1df45c720a14",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c84d430f-509c-476d-9335-d968b1f4ef33"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 303,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d9960f8f-54be-4ae3-988b-18c5064433d0",
+          "title": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "timedOut": null,
+              "duration": 353,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"search-input\"]').should('not.exist');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "12533329-69f3-48de-b66b-5c729bb03127",
+              "parentUUID": "d9960f8f-54be-4ae3-988b-18c5064433d0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "timedOut": null,
+              "duration": 297,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/comidas');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]').should('not.exist');",
+              "err": {
+                "message": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught Error: Cannot find module './pages/ProfilePage'\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at webpackMissingModule (http://localhost:3000/static/js/main.chunk.js:108:45)\n    at Module../src/App.js (http://localhost:3000/static/js/main.chunk.js:108:139)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Module../src/index.js (http://localhost:3000/static/js/main.chunk.js:494:62)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at fn (http://localhost:3000/static/js/bundle.js:151:20)\n    at Object.1 (http://localhost:3000/static/js/main.chunk.js:635:18)\n    at __webpack_require__ (http://localhost:3000/static/js/bundle.js:785:30)\n    at checkDeferredModules (http://localhost:3000/static/js/bundle.js:46:23)\n    at Array.webpackJsonpCallback [as push] (http://localhost:3000/static/js/bundle.js:33:19)\n    at http://localhost:3000/static/js/main.chunk.js:1:85",
+                "diff": null
+              },
+              "uuid": "a67d4ffa-3a03-4959-998a-5b6fde962bfc",
+              "parentUUID": "d9960f8f-54be-4ae3-988b-18c5064433d0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "12533329-69f3-48de-b66b-5c729bb03127",
+            "a67d4ffa-3a03-4959-998a-5b6fde962bfc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 650,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
