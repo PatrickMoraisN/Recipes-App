@@ -25,33 +25,41 @@ function ProfilePage() {
   };
 
   return (
-    <>
+    <section className="profile-page">
       <Header title="Perfil" />
       <p data-testid="profile-email">{email}</p>
-      <button
-        type="button"
-        id="done"
-        data-testid="profile-done-btn"
-        onClick={ redirect }
-      >
-        Receitas Feitas
-      </button>
-      <button
-        type="button"
-        data-testid="profile-favorite-btn"
-        onClick={ redirect }
-      >
-        Receitas Favoritas
-      </button>
-      <button
-        type="button"
-        data-testid="profile-logout-btn"
-        onClick={ logoutFunc }
-      >
-        Sair
-      </button>
+      <div className="btn-profile">
+        <button
+          type="button"
+          id="done"
+          data-testid="profile-done-btn"
+          onClick={ redirect }
+          className="profile-btns"
+        >
+          Receitas Feitas
+          <i class="fas fa-check-circle icon-profile"></i>
+        </button>
+        <button
+          type="button"
+          data-testid="profile-favorite-btn"
+          onClick={ redirect }
+          className="profile-btns"
+        >
+          Receitas Favoritas
+          <i class="fas fa-grin-hearts icon-profile"></i>
+        </button>
+        <button
+          type="button"
+          data-testid="profile-logout-btn"
+          onClick={ logoutFunc }
+          className="profile-btns"
+        >
+          Sair
+          <i class="fas fa-sign-out-alt icon-profile"></i>
+        </button>
+      </div>
       <Footer />
-    </>
+    </section>
   );
 }
 

@@ -377,3 +377,46 @@ header {
     color: green;
   }
 }
+
+.profile-page {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(8, 8, 8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.profile-page p {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 110px;
+  color: rgb(212, 212, 212);
+}
+
+.btn-profile {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  top: 240px;
+  width: 80%;
+}
+
+.profile-btns {
+  position: relative;
+  padding: 14px 0;
+  background-color: rgb(63, 63, 63);
+  border-radius: 8px;
+  border: 0;
+  color: rgb(235, 235, 235);
+  font-size: 1.4rem;
+}
+
+.icon-profile {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
