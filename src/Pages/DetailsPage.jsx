@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import DetailsButtons from '../Components/DetailsButtons';
 import DetailsCard from '../Components/DetailsCard';
+import Loading from '../Components/Loading';
 import RecommendationList from '../Components/RecommendationList';
 import { FoodContext } from '../Context/FoodProvider';
 
@@ -66,7 +67,7 @@ function DetailsPage() {
       </div>
     );
   }
-  return (<p>Loading</p>);
+  return (<Loading />);
 }
 
 export default DetailsPage;

@@ -345,3 +345,35 @@ header {
   color: #0fa36b;
   border: 2px solid #0fa36b;
 }
+
+.loading-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  flex-direction: column;
+}
+
+.loading-page h3 {
+  color: white;
+  margin-bottom: 120px;
+}
+
+.loading {
+  font-size: 4rem;
+  color: rgb(235, 235, 235);
+  animation: loading 1.4s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+    color: white;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    color: green;
+  }
+}

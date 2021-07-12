@@ -7,6 +7,7 @@ import PhotoOfProduct from '../Components/PhotoOfProduct';
 import TitleOfProduct from '../Components/TitleOfProduct';
 import CategoryOfProduct from '../Components/CategoryOfProduct';
 import { FoodContext } from '../Context/FoodProvider';
+import Loading from '../Components/Loading';
 
 function ProgressPage() {
   const [product, setProduct] = useState({});
@@ -52,7 +53,7 @@ function ProgressPage() {
       </>
     );
   }
-  return (<p>Loading</p>);
+  return (<Loading />);
 }
 
 export default ProgressPage;
