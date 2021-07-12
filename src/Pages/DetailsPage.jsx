@@ -50,11 +50,11 @@ function DetailsPage() {
   if (isProduct) {
     return (
       <div className="details-page">
-        <p>Details Page</p>
         <DetailsCard product={ product } idn={ idn } />
         <RecommendationList idn={ idn } />
         <DetailsButtons product={ product } idn={ idn } />
         <Link to={ `/${page[1]}/${id}/in-progress` }>
+        <div className="footer">
           <button
             type="button"
             data-testid="start-recipe-btn"
@@ -62,7 +62,9 @@ function DetailsPage() {
             onClick={ handleClick }
           >
             { btnText() }
+          <i class="far fa-play-circle play"></i>
           </button>
+        </div>          
         </Link>
       </div>
     );

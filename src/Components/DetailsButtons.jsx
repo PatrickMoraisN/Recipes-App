@@ -1,37 +1,62 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import FavoriteButton from './FavoriteButton';
-import shareBtnImg from '../images/shareIcon.svg';
+import React from "react";
+import PropTypes from "prop-types";
+import FavoriteButton from "./FavoriteButton";
+import shareBtnImg from "../images/shareIcon.svg";
+import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function DetailsButtons({ product, idn }) {
-  const [isCopy, setIsCopy] = React.useState(false);
 
+  const toastShare = () => {
+    toast.dark('Link Copiado!!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
+  }
   const handleClickShare = () => {
-    setIsCopy(true);
+    toastShare();
     // navigator.clipboard.writeText(window.location.href)
-    const url = window.location.href.split('/');
+    const url = window.location.href.split("/");
     const maxLength = 6;
     if (url.length === maxLength) {
       url.pop();
-      navigator.clipboard.writeText(url.join('/'));
+      navigator.clipboard.writeText(url.join("/"));
     } else {
       navigator.clipboard.writeText(window.location.href);
     }
   };
 
   return (
-    <>
-      { isCopy && <h4>Link copiado!</h4> }
-      <FavoriteButton product={ product } idn={ idn } />
-      <input
-        type="image"
+    <div className="btns-details">
+      <FavoriteButton product={product} idn={idn} />
+      <i
         data-testid="share-btn"
-        onClick={ handleClickShare }
+        onClick={handleClickShare}
         id="share-btn"
-        src={ shareBtnImg }
+        src={shareBtnImg}
         alt="Share button"
+        className="share fas fa-share-alt"
+      ></i>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
       />
-    </>
+      {/* Same as */}
+      <ToastContainer />
+    </div>
   );
 }
 

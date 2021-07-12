@@ -32,10 +32,6 @@ footer {
   z-index: 999;
 }
 
-.slider {
-  padding-bottom: 70px;
-}
-
 header {
   position: fixed;
   line-height: 20px;
@@ -327,16 +323,6 @@ header {
   }
 }
 
-.init-recipe-btn {
-  background-color: green;
-  bottom: 0;
-  left: 130px;
-  margin-top: 20px;
-  padding: 8px 13px;
-  position: fixed;
-  z-index: 99;
-}
-
 .check {
   text-decoration: line-through;
 }
@@ -448,4 +434,132 @@ header {
 .heart-broken {
   color: rgb(231, 231, 231);
   font-size: 3rem;
+}
+
+.details-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding-bottom: 80px;
+  font-family: Poppins;
+}
+
+.details-img {
+  width: 100%;
+}
+
+.slider {
+  margin-top: 50px;
+  padding: 0 20px;
+  width: 80%;
+  height: 300px;
+  margin-left: 14px;
+}
+
+.slider-img {
+  width: auto;
+  height: 170px;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  content: "•";
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 2px;
+  color: rgb(99, 99, 99);
+  z-index: 99;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+  position: absolute;
+  content: "•";
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 2px;
+  color: rgb(255, 255, 255);
+  z-index: 99;
+  opacity: 1;
+}
+
+.video {
+  margin: 0 13px;
+  width: 90%;
+}
+
+.instructions {
+  padding: 0 30px;
+  font-size: 1rem;
+  line-height: 24px;
+  font-family: Poppins;
+}
+
+.favorite, .share {
+  font-size: 2rem;
+}
+
+.favorite {
+  margin-right: 10px;
+}
+
+.share {
+  margin-left: 10px;
+}
+
+.init-recipe-btn {
+  background-color: #0fa36b;
+  border: none;
+  border-radius: 4px;
+  left: 130px;
+  padding: 8px 13px;
+  z-index: 99;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(61, 61, 61);
+}
+
+.btns-details {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  width: 100%;
+}
+
+.ingredients-list {
+  background-color: rgb(95, 95, 95);
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.play {
+  font-size: 1.3rem;
+  margin-left: 12px;
+}
+
+.recipe-title, .recipe-category {
+  text-align: center;
+  color: #f1f1f1;
+  font-family: Poppins;
+  margin: 0;
 }

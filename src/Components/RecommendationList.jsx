@@ -29,7 +29,7 @@ const RecommendationList = ({ idn }) => {
               }
               return (
                 <div key={ index } data-testid={ `${index}-recomendation-card` }>
-                  <img src={ elem[`str${idnFinal}Thumb`] } alt="Recipe" />
+                  <img src={ elem[`str${idnFinal}Thumb`] } alt="Recipe" className="slider-img"/>
                   {idnFinal === 'Meal'
                     ? <p>{elem.strCategory}</p> : <p>{elem.strAlcoholic}</p> }
                   <p

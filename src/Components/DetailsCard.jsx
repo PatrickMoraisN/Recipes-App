@@ -18,7 +18,7 @@ function DetailsCard({ product, idn }) {
       });
     }
     return (
-      <ul>
+      <ul className="ingredients-list">
         {initIngredients.map((ingredient, index) => {
           const lengthMax = 4;
           const lengthMmax2 = 3;
@@ -47,21 +47,23 @@ function DetailsCard({ product, idn }) {
             src={ elem[`str${idn[1]}Thumb`] }
             data-testid="recipe-photo"
             alt="recipe"
+            className="details-img"
           />
-          <h2 data-testid="recipe-title">{elem[`str${idn[1]}`]}</h2>
+          <h2 data-testid="recipe-title" className="recipe-title">{elem[`str${idn[1]}`]}</h2>
 
-          <h3 data-testid="recipe-category">
+          <h3 data-testid="recipe-category" className="recipe-category">
             {elem.strCategory}
             -
             {elem.strAlcoholic}
           </h3>
           { pickIngredients() }
-          <h3 data-testid="instructions">{elem.strInstructions}</h3>
+          <h3 data-testid="instructions" className="instructions">{elem.strInstructions}</h3>
           { idn[1] === 'Meal' && <iframe
             title="Recipe"
             width="420"
             height="315"
             data-testid="video"
+            className="video"
             src={ elem.strYoutube.replace('watch?v=', 'embed/') }
           />}
         </div>
