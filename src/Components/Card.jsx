@@ -26,7 +26,7 @@ const Card = ({ thumb, name, index, id }) => {
           className="img-card"
           data-testid={ `${index}-card-img` }
         />
-        <h3 data-testid={ `${index}-card-name` }>{name}</h3>
+        <h3 data-testid={ `${index}-card-name` } className="title-card">{name}</h3>
       </span>
     </button>
   );

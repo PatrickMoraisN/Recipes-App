@@ -18,13 +18,27 @@ const ButtonsCategory = ({ page, identifier }) => {
     getCategorys();
   }, []);
 
-  const handleClick = async (category) => {
+  const setAllSelected = () => {
+    const allBtn = document.querySelector('#all');
+    allBtn.classList.add('selected');
+  };
+
+  const setTargetSelected = (event) => {
+    console.log(event.target.classList.add('selected'))
+  };
+
+  const handleClick = async (event, category) => {
+    const btnSelected = document.querySelector('.selected');
+    btnSelected.classList.remove('selected')
+    setTargetSelected(event);
     if (clicks.clicks !== 2) {
       if (clicks.name === category) {
         const response2 = await fetch(`https://www.${page}.com/api/json/v1/1/search.php?s=`);
         const json2 = await response2.json();
         setClicks({ name: '', clicks: 1 });
         setFoods(json2[identifier]);
+        btnSelected.classList.remove('selected')
+        setAllSelected();
       } else {
         const response = await fetch(`https://www.${page}.com/api/json/v1/1/filter.php?c=${category}`);
         const json = await response.json();
@@ -38,29 +52,32 @@ const ButtonsCategory = ({ page, identifier }) => {
     const response2 = await fetch(`https://www.${page}.com/api/json/v1/1/search.php?s=`);
     const json2 = await response2.json();
     setFoods(json2[identifier]);
+    setAllSelected();
   };
 
   return (
     <section className="btns-category">
       <button
         type="button"
+        id="all"
         onClick={ handleClickAll }
         data-testid="All-category-filter"
-        className="btn-category"
+        className="btn-category selected"
       >
         All
       </button>
       {
         categorys.map((category, index) => {
+          console.log(category)
           const maxLength = 4;
           if (index <= maxLength) {
             return (
               <button
                 type="button"
                 data-testid={ `${category.strCategory}-category-filter` }
-                onClick={ () => handleClick(category.strCategory) }
+                onClick={ (event) => handleClick(event, category.strCategory) }
                 key={ category.strCategory }
-                className="btn-category"
+                className={`btn-category ${category.strAlcoholic > 0 && 'btn-category-drink'}`}
               >
                 {category.strCategory}
               </button>
