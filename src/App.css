@@ -420,3 +420,32 @@ header {
   font-size: 1.5rem;
   color: white;
 }
+
+.empty-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+}
+
+.empty-page h3 {
+  font-size: 1.3rem;
+  color: rgb(231, 231, 231);
+  font-family: Poppins;
+}
+
+.empty-page button {
+  padding: 10px 15px;
+  background-color: rgb(204, 204, 204);
+  border: none;
+  border-radius: 8px;
+}
+
+.heart-broken {
+  color: rgb(231, 231, 231);
+  font-size: 3rem;
+}

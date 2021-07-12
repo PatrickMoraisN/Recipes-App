@@ -3,9 +3,10 @@ import Header from '../Components/Header';
 import RecipesDoneCard from '../Components/RecipesDoneCard';
 import FiltersOfDoneRecipes from '../Components/FiltersOfDoneRecipes';
 import { FoodContext } from '../Context/FoodProvider';
+import EmptyList from '../Components/EmptyList';
 
 const FavoriteRecipes = () => {
-  const [list, setList] = React.useState([]);
+  const [list, setList] = React.useState(null);
   const { favoriteRecipesFilter } = React.useContext(FoodContext);
 
   React.useEffect(() => {
@@ -17,13 +18,16 @@ const FavoriteRecipes = () => {
     }
   }, [favoriteRecipesFilter]);
 
-  return (
-    <>
-      <Header page="receitas-favoritas" title="Receitas Favoritas" />
-      <FiltersOfDoneRecipes page="favorite" />
-      <RecipesDoneCard list={ list } tag={ false } heart />
-    </>
-  );
+  if (list) {
+    return (
+      <>
+        <Header page="receitas-favoritas" title="Receitas Favoritas" />
+        <FiltersOfDoneRecipes page="favorite" />
+        <RecipesDoneCard list={ list } tag={ false } heart />
+      </>
+    );
+  }
+  return (<EmptyList />)
 };
 
 export default FavoriteRecipes;
