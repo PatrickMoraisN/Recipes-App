@@ -6,6 +6,7 @@ const PhotoOfProduct = ({ idn, currentProduct }) => (
     src={ currentProduct[0][`str${idn[1]}Thumb`] }
     alt="Product"
     data-testid="recipe-photo"
+    className="details-img"
   />
 );
 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TitleOfProduct = ({ idn, currentProduct }) => (
-  <h2 data-testid="recipe-title">{currentProduct[0][`str${idn[1]}`]}</h2>
+  <h2 data-testid="recipe-title" className="recipe-title">{currentProduct[0][`str${idn[1]}`]}</h2>
 );
 
 TitleOfProduct.propTypes = {

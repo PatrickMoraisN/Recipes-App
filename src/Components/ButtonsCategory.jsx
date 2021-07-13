@@ -70,7 +70,6 @@ const ButtonsCategory = ({ page, identifier }) => {
       </button>
       {
         categorys.map((category, index) => {
-          console.log(category)
           const maxLength = 4;
           if (index <= maxLength) {
             return (

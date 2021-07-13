@@ -4,7 +4,7 @@ import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 
 const ExplorePage = () => (
-  <div>
+  <section className="explore-page">
     <Header title="Explorar" />
     <Link to="/explorar/comidas">
       <button type="button" data-testid="explore-food">
@@ -17,7 +17,7 @@ const ExplorePage = () => (
       </button>
     </Link>
     <Footer />
-  </div>
+  </section>
 );
 
 export default ExplorePage;

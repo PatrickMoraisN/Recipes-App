@@ -50,6 +50,7 @@ const FinishBtn = ({ checksDone, currentProduct, idn }) => {
       type="button"
       onClick={ handleClick }
       disabled={ checksDone !== document.querySelectorAll('label').length }
+      className={`finish-btn ${checksDone !== document.querySelectorAll('label').length ? 'disable' : 'enable'}`}
     >
       Finalizar
     </button>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CategoryOfProduct = ({ currentProduct }) => (
-  <h3 data-testid="recipe-category">{currentProduct[0].strCategory}</h3>
+  <h3 data-testid="recipe-category" className="recipe-category">{currentProduct[0].strCategory}</h3>
 );
 
 CategoryOfProduct.propTypes = {

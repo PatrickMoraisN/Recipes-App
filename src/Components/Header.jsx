@@ -12,6 +12,12 @@ function Header({ page, title }) {
     setSearchText,
     setCurrentPage } = React.useContext(FoodContext);
 
+    const changeLabel = (e) => {
+      const btns = document.querySelectorAll(".search-text")
+      btns.forEach(btn => btn.classList.remove('search-selected'))
+      e.target.parentNode.classList.add('search-selected')
+    }
+
   const handleClick = () => {
     const radios = document.querySelectorAll('[name="search"]');
     const searchInput = document.querySelector('#searchInput');
@@ -28,60 +34,65 @@ function Header({ page, title }) {
   };
 
   const searchInputs = () => (
-    <>
-      <input data-testid="search-input" id="searchInput" />
+    <div className="search-header">
+      <input data-testid="search-input" id="searchInput" className="search-input"/>
       <br />
-      <label htmlFor="ingredient" className="text">
-        <input
-          id="ingredient"
-          type="radio"
-          data-testid="ingredient-search-radio"
-          value="Ingrediente"
-          name="search"
-        />
-        Ingrediente
-      </label>
-      <label htmlFor="name" className="text">
-        <input
-          type="radio"
-          id="name"
-          data-testid="name-search-radio"
-          value="Nome"
-          name="search"
-        />
-        Nome
-      </label>
-      <label htmlFor="first-letter" className="text">
-        <input
-          id="first-letter"
-          type="radio"
-          data-testid="first-letter-search-radio"
-          value="Primeira letra"
-          name="search"
-        />
-        Primeira letra
-      </label>
-      <br />
+      <div className="search-options">
+        <label htmlFor="ingredient" className="text search-text">
+          <input
+            id="ingredient"
+            type="radio"
+            data-testid="ingredient-search-radio"
+            value="Ingrediente"
+            name="search"
+            onClick={(e) => changeLabel(e) }
+          />
+          Ingrediente
+        </label>
+        <label htmlFor="name" className="text search-text">
+          <input
+            type="radio"
+            id="name"
+            data-testid="name-search-radio"
+            value="Nome"
+            name="search"
+            onClick={(e) => changeLabel(e) }
+          />
+          Nome
+        </label>
+        <label htmlFor="first-letter" className="text search-text">
+          <input
+            id="first-letter"
+            type="radio"
+            data-testid="first-letter-search-radio"
+            value="Primeira letra"
+            name="search"
+            onClick={(e) => changeLabel(e) }
+          />
+          Primeira letra
+        </label>
+        <br />
+      </div>
       <button
         data-testid="exec-search-btn"
-        className="entrar-btn search-btn"
+        className="search-btn"
         type="button"
         onClick={ handleClick }
       >
         Buscar
       </button>
-    </>
+    </div>
   );
 
   return (
     <section>
       <header>
         <Link to="/perfil">
-          <i class="fas fa-user user"></i>
+          <i className="fas fa-user user"></i>
         </Link>
         <h1 data-testid="page-title">{title}</h1>
         <i 
-          class="fas fa-search lupa"
+          className="fas fa-search lupa"
           onClick={ () => setShowSearch(!showSearch) }
           alt="search bar"
         >

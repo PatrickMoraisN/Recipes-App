@@ -62,7 +62,7 @@ function DetailsPage() {
             onClick={ handleClick }
           >
             { btnText() }
-          <i class="far fa-play-circle play"></i>
+          <i className="far fa-play-circle play"></i>
           </button>
         </div>          
         </Link>

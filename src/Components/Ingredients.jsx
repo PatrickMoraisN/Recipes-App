@@ -34,7 +34,7 @@ const Ingredients = ({ currentProduct, page }) => {
   };
 
   return (
-    <ul>
+    <ul className="ul-list">
 
       {ingredients.map((ingredient, index) => {
         const lengthMax = 4;
@@ -42,23 +42,25 @@ const Ingredients = ({ currentProduct, page }) => {
         if (ingredient.length !== 0 && ingredient.length !== lengthMax
           && ingredient.length !== lengthMmax2) {
           return (
-            <>
+            <div className="ingredients-list ingredient-progress">
               <label
                 type="button"
                 htmlFor={ ingredient }
                 data-testid={ `${index}-ingredient-step` }
                 data-key={ `${index}-ingredient-step` }
+                className="label-ingredients"
               >
                 <input
                   type="checkbox"
                   id={ ingredient }
                   name={ ingredient }
                   onClick={ handleClick }
+                  className="checkbox"
                 />
                 {ingredient}
               </label>
               <br />
-            </>
+            </div>
           );
         }
         return null;
