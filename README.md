@@ -10,17 +10,17 @@
 
 ---
 # :camera_flash: Project Media
-![Imagem do projeto](src/images/app1.gif)
+<img src="src/images/app1.gif" width="200px"/>
 
-![Imagem do projeto](src/images/app2.gif)
+<img src="src/images/app2.gif" width="200px"/>
 
-![Imagem do projeto](src/images/img1.png)
+<img src="src/images/img1.png" width="200px"/>
 
-![Imagem do projeto](src/images/img2.png)
+<img src="src/images/img2.png" width="200px"/>
 
-![Imagem do projeto](src/images/img3.png)
+<img src="src/images/img3.png" width="200px"/>
 
-![Imagem do projeto](src/images/img4.png)
+<img src="src/images/img4.png" width="200px"/>
 
 <br />
 
