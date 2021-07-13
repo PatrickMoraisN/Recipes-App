@@ -1,4 +1,4 @@
-<h1 align="center">devTattoo Project</h1>
+<h1 align="center">Recipes App</h1>
 <br />
 
 # :pushpin: Index
