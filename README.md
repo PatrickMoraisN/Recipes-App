@@ -17,6 +17,8 @@
   <img src="src/images/img2.png" width="300px"/>
   <img src="src/images/img3.png" width="300px"/>
   <img src="src/images/img4.png" width="300px"/>
+  <img src="src/images/img5.png" width="300px"/>
+  <img src="src/images/img6.png" width="300px"/>
 </div>
 
 <br />
