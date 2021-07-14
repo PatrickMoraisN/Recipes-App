@@ -4,7 +4,7 @@
 # :pushpin: Index
 - [Project Media](#camera_flash-project-media)
 - [About](#monocle_face-about)
-- [Technologies](#rocket-tecnologias-usadas)
+- [Technologies](#rocket-technologies)
 - [Authors](#closed_book-authors)
 <br />
 
@@ -34,7 +34,7 @@ You can also add a recipe to favorites so that it is saved in the Local Storage.
 
 ---
 
-# :rocket:  Technologies
+# :rocket: Technologies
 This project was developed with the following technologies: <br>
 - :heavy_check_mark: **HTML**
 - :heavy_check_mark: **CSS**
@@ -51,8 +51,12 @@ This project was developed with the following technologies: <br>
 By [Patrick Morais](https://github.com/PatrickMoraisN).
 ### :link: LinkedIn: https://www.linkedin.com/in/patrick-morais/
 
+---
+
 By [Edmilson Bernardo](https://github.com/EdmilsonBernardo).
 ### :link: LinkedIn: https://www.linkedin.com/in/edmilsonbernardont/
+
+---
 
 By [Dário Villefor](https://github.com/Villefor).
 ### :link: LinkedIn: https://www.linkedin.com/in/dvillefor/
