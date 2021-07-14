@@ -19,11 +19,11 @@ const DoneRecipes = () => {
   }, [doneRecipesFilter]);
   if (list) {
     return (
-      <>
+      <section className="done-page">
         <Header page="receitas" title="Receitas Feitas" />
         <FiltersOfDoneRecipes page="done" />
         <RecipesDoneCard list={ list } tag heart={ false } />
-      </>
+      </section>
     );
   }
   return (<EmptyList />)

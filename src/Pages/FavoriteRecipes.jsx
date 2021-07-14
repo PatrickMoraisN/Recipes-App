@@ -18,13 +18,13 @@ const FavoriteRecipes = () => {
     }
   }, [favoriteRecipesFilter]);
 
-  if (list) {
+  if (list && list.length != 0) {
     return (
-      <>
+      <section className="favorite-page">
         <Header page="receitas-favoritas" title="Receitas Favoritas" />
         <FiltersOfDoneRecipes page="favorite" />
         <RecipesDoneCard list={ list } tag={ false } heart />
-      </>
+      </section>
     );
   }
   return (<EmptyList />)

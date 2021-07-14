@@ -102,18 +102,6 @@ const FavoriteButton = ({ product, idn }) => {
         className={`favorite ${isAFavorite ? "fas fa-heart" : "far fa-heart"} `}
         alt="Favorite button"
       ></i>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-      {/* Same as */}
       <ToastContainer />
     </>
   );

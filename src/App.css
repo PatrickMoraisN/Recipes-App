@@ -230,7 +230,7 @@ header {
   width: 100%;
 }
 
-.btn-category {
+.btn-category, .favorite-btn {
   border: none;
   outline: none;
   border-radius: 6px;
@@ -708,4 +708,92 @@ header {
 .ingredient-progress {
   height: 30px;
   padding: 6px 0;
+}
+
+.favorite-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  background-color: rgb(8, 8, 8);
+}
+
+.favorite-card {
+  display: flex;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 20px;
+  flex-direction: column;
+  
+  align-items: center;
+  width: 250px;
+  height: 120px;
+  position: relative;
+  margin-left: 60px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.image-click {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  object-position: center;
+  left: -25%;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 10px white;
+}
+
+.share-favorite, .heart-favorite {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  text-shadow: 0 0 10px rgb(245, 111, 211);
+}
+
+.heart-favorite {
+  top: 60px;
+  right: 0px;
+}
+
+.recipe-name-favorite {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-family: Poppins;
+  color: white;
+  text-shadow: 0 0 5px rgb(100, 123, 255);
+}
+
+.food-name, .drink-name {
+  color: rgb(247, 247, 247);
+  text-shadow: 0 0 5px rgb(224, 64, 184);
+  background: rgb(26, 26, 26);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.done-page {
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(8, 8, 8);
+}
+
+.recipe-name-done, .data {
+  position: absolute;
+  top: 40px;
+}
+
+.data {
+  top: 70px;
+  color: white;
+  text-shadow: 0 0 6px rgb(112, 218, 112);
 }

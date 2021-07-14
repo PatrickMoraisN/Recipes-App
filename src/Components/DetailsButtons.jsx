@@ -43,19 +43,6 @@ function DetailsButtons({ product, idn }) {
         alt="Share button"
         className="share fas fa-share-alt"
       ></i>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
-      {/* Same as */}
-      <ToastContainer />
     </div>
   );
 }
