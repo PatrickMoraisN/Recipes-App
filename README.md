@@ -46,8 +46,11 @@ This project was developed with the following technologies: <br>
 ---
 
 # :closed_book: Authors
-By Patrick Morais.
+By [Patrick Morais](https://github.com/PatrickMoraisN).
 ### :link: LinkedIn: https://www.linkedin.com/in/patrick-morais/
 
 By [Edmilson Bernardo](https://github.com/EdmilsonBernardo).
 ### :link: LinkedIn: https://www.linkedin.com/in/edmilsonbernardont/
+
+By [Dário Villefor](https://github.com/Villefor).
+### :link: LinkedIn: https://www.linkedin.com/in/dvillefor/
